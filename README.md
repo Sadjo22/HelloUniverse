@@ -1,2 +1,2 @@
-# HelloUniverse
-HelloUniverse
+# com.MyUniverseProject.HelloUniverse
+com.MyUniverseProject.HelloUniverse
