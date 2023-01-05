@@ -2,14 +2,17 @@ package com.MyUniverseProject;
 
 public class HelloUniverse {
     public static void main(String... args){
-        String valeur = "Aux dernières nouvelles, le nombre total de planètes dans le système solaire est de : ";
-        int nbPlanetes=9;
-        System.out.println(valeur);
-        System.out.println(nbPlanetes);
-        valeur = "Il y a quelques années cependant, elles étaient au nombre de : ";
-        nbPlanetes=8;
-        System.out.println(valeur);
-        System.out.println(nbPlanetes);
+        String phraseIntroduction="En %d, les planètes du système solaire étaient au nombre de : %d";
+        int nbPlanetes=0;
+        short annee=2006;
+        if (annee<2006){
+            nbPlanetes=9;
+        }
+        else{
+            nbPlanetes=8;
+        }
+        System.out.printf(phraseIntroduction,annee,nbPlanetes);
+
 
 
     }
