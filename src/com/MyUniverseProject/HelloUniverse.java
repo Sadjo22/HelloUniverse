@@ -66,12 +66,9 @@ public class HelloUniverse {
         vaisseauMars.nbrePassagers = 9;
         vaisseauMars.typeVaisseau = "FREGATE";
 
-        if(mars.presenceVaisseau){
-            System.out.println("Aucun vaisseau ne s'en va.");
-        }else{
-            Vaisseau vaisseau = mars.acceuillirVaisseau(vaisseauMars);
-            System.out.println("Le nombre d'humains ayant déjà séjourné sur "+mars.nom+ " est actuellement de "+mars.totalVisiteurs);
-        }
+        Vaisseau vaisseauMars2 = new Vaisseau();
+        vaisseauMars.nbrePassagers = 42;
+        vaisseauMars.typeVaisseau = "FRESUS";
 
 
         uranus.atmosphere.hydrogène = 83f;
@@ -82,6 +79,8 @@ public class HelloUniverse {
         System.out.println(uranus.atmosphere.hydrogène+"% D'hydrogène");
         System.out.println(uranus.atmosphere.hélium+"% D'hélium");
         System.out.println(uranus.atmosphere.méthane+"% De methane");
+        System.out.println("la forme d'une planete est: "+Planet.forme);
+        System.out.println("la forme de "+mars.nom+ "est: "+Planet.forme);
 
     }
 
