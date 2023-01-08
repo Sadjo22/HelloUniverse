@@ -8,6 +8,14 @@ public class Planet {
     Atmosphere atmosphere = new Atmosphere();
     boolean presenceVaisseau = false;
     static String forme ="Spherique";
+    static int nbPlanetesDecouvertes;
+
+    Planet(String nom, long diametre, String matiere){
+        this.nom = nom;
+        this.matiere = matiere;
+        this.diametre = diametre;
+        nbPlanetesDecouvertes++;
+    }
 
     void revolution(String name){
         System.out.println("Je suis la planète "+ name + " et je tourne autour de mon étoile.");
@@ -24,6 +32,16 @@ public class Planet {
        return  vaisseau;
 
     };
+
+    static void expansion(double distance){
+        if(distance < 14){
+            System.out.println("Oh la la mais c'est super rapide !");
+        }else{
+            System.out.println("Je rêve ou c'est plus rapide que la lumière ?");
+        }
+    }
+
+
 
 
 }
