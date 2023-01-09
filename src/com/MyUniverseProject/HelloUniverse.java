@@ -45,6 +45,23 @@ public class HelloUniverse {
         Planet.expansion(14.2);
         System.out.println(Planet.nbPlanetesDecouvertes);
 
+        VaisseauDeGuerre chasseur = new VaisseauDeGuerre();
+        chasseur.typeVaisseau = "Chasseur";
+        chasseur.blindage = 156;
+        chasseur.resistanceDuBouclier = 2;
+
+        VaisseauDeGuerre vaisseauMonde = new VaisseauDeGuerre();
+        vaisseauMonde.typeVaisseau = "vaisseau Monde";
+        vaisseauMonde.blindage = 4784;
+        vaisseauMonde.resistanceDuBouclier = 30;
+
+        chasseur.activerBouclier();
+        vaisseauMonde.activerBouclier();
+        chasseur.attaque(vaisseauMonde,"lasers photoniques",3);
+        vaisseauMonde.desactiverBouclier();
+        System.out.println(vaisseauMonde.resistanceDuBouclier);
+        System.out.println(vaisseauMonde.blindage);
+
     }
 
 }
