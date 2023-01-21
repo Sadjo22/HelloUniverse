@@ -3,8 +3,16 @@ package com.MyUniverseProject;
 public class VaisseauDeGuerre extends Vaisseau{
 
     void attaque(Vaisseau vaisseau, String arme,  int duree){
-        System.out.println("Un vaisseau de type "+ this.typeVaisseau +" attaque un vaisseau de type " +vaisseau.typeVaisseau+" en utilisant l'arme "+arme+" pendant "+ duree+  " minutes.");
-        vaisseau.resistanceDuBouclier = 0;
-        vaisseau.blindage = vaisseau.blindage/2;
+       /* if (vaisseau instanceof VaisseauDeGuerre ){
+            System.out.println("true");
+        }*/
+        System.out.println("Attaque impossible, l'armement est désactivé");
+       /* vaisseau.resistanceDuBouclier = 0;
+        vaisseau.blindage = vaisseau.blindage/2;*/
+    }
+
+    boolean desactiverArmes(){
+        System.out.println("Désactivation des armes d'un vaisseau de type "+this.typeVaisseau);
+        return true;
     }
 }

@@ -1,23 +1,23 @@
 package com.MyUniverseProject;
 
 public class Planet {
-    String nom;
-    String matiere;
-    long   diametre;
+   public String nom;
+    public String matiere;
+    public long   diametre;
     int    totalVisiteurs;
     Atmosphere atmosphere = new Atmosphere();
     boolean presenceVaisseau = false;
     static String forme ="Spherique";
     static int nbPlanetesDecouvertes;
 
-    Planet(String nom, long diametre, String matiere){
+    public Planet(String nom, long diametre, String matiere){
         this.nom = nom;
         this.matiere = matiere;
         this.diametre = diametre;
         nbPlanetesDecouvertes++;
     }
 
-    void revolution(String name){
+  public void revolution(String name){
         System.out.println("Je suis la planète "+ name + " et je tourne autour de mon étoile.");
     };
 

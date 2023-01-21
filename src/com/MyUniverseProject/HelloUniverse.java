@@ -1,5 +1,6 @@
 package com.MyUniverseProject;
 import javax.swing.*;
+import java.util.Scanner;
 
 public class HelloUniverse {
     public static void main(String... args){
@@ -46,21 +47,19 @@ public class HelloUniverse {
         System.out.println(Planet.nbPlanetesDecouvertes);
 
         VaisseauDeGuerre chasseur = new VaisseauDeGuerre();
-        chasseur.typeVaisseau = "Chasseur";
+        chasseur.typeVaisseau = "CHASSEUR";
         chasseur.blindage = 156;
         chasseur.resistanceDuBouclier = 2;
 
-        VaisseauDeGuerre vaisseauMonde = new VaisseauDeGuerre();
+        Vaisseau  vaisseauMonde = new VaisseauCivil();
         vaisseauMonde.typeVaisseau = "vaisseau Monde";
         vaisseauMonde.blindage = 4784;
         vaisseauMonde.resistanceDuBouclier = 30;
-
-        chasseur.activerBouclier();
-        vaisseauMonde.activerBouclier();
-        chasseur.attaque(vaisseauMonde,"lasers photoniques",3);
-        vaisseauMonde.desactiverBouclier();
-        System.out.println(vaisseauMonde.resistanceDuBouclier);
-        System.out.println(vaisseauMonde.blindage);
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Quelle vaisseau souhaiteriez-vous utiliser?");
+        String txt = scan.nextLine();
+        System.out.println("sur quelle planete souhaiteriez-vous VOUS POSER?");
+        String txt1 = scan.nextLine();
 
     }
 

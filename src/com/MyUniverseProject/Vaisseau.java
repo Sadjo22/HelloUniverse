@@ -1,6 +1,6 @@
 package com.MyUniverseProject;
 
-public class Vaisseau {
+public class Vaisseau  {
     String typeVaisseau;
     int nbrePassagers;
     int blindage ;
